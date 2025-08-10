@@ -9,12 +9,12 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: 0-Demo_Files/Nginx_Deployment
-    repoURL: 'https://github.com/hienpham4194/ArgoCD-Complete-Master-Course.git'
+    repoURL: 'https://github.com/hienpham94/ArgoCD-Complete-Master-Course.git'
     targetRevision: HEAD
   project: default
   syncPolicy:
     automated:
-      prune: false
+      prune: true
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
