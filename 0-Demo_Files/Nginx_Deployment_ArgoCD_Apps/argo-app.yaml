@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: selfhealtestapp
   namespace: argocd
-  annotations:
-    argocd.argoproj.io/sync-options: Prune=false
 spec:
   destination:
     namespace: argocdappdemo
